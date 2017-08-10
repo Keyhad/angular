@@ -1,0 +1,8 @@
+C:\projects\dotnet\examples\helloworld\bin\Debug\netcoreapp1.1\helloworld.deps.json
+C:\projects\dotnet\examples\helloworld\bin\Debug\netcoreapp1.1\helloworld.runtimeconfig.json
+C:\projects\dotnet\examples\helloworld\bin\Debug\netcoreapp1.1\helloworld.runtimeconfig.dev.json
+C:\projects\dotnet\examples\helloworld\bin\Debug\netcoreapp1.1\helloworld.dll
+C:\projects\dotnet\examples\helloworld\bin\Debug\netcoreapp1.1\helloworld.pdb
+C:\projects\dotnet\examples\helloworld\obj\Debug\netcoreapp1.1\helloworld.AssemblyInfo.cs
+C:\projects\dotnet\examples\helloworld\obj\Debug\netcoreapp1.1\helloworld.dll
+C:\projects\dotnet\examples\helloworld\obj\Debug\netcoreapp1.1\helloworld.pdb

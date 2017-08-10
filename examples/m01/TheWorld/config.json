@@ -1,0 +1,12 @@
+{
+  "MailSettings": {
+    "ToAddress": "keyvan.ha@gmail.com"
+  },
+  "ConnectionStrings": {
+    "WorldContextConnection": "Server=(localdb)\\MSSQLLocalDB;Database=TheWorldDb;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  },
+  "Keys": {
+    "BingMap" : "DONTEVERPUTKEYSINSOURCECONTROL"
+  }
+
+}

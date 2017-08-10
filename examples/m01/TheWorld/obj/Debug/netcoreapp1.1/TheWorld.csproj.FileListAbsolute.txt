@@ -1,0 +1,9 @@
+C:\projects\dotnet\examples\m01\TheWorld\bin\Debug\netcoreapp1.1\TheWorld.deps.json
+C:\projects\dotnet\examples\m01\TheWorld\bin\Debug\netcoreapp1.1\TheWorld.runtimeconfig.json
+C:\projects\dotnet\examples\m01\TheWorld\bin\Debug\netcoreapp1.1\TheWorld.runtimeconfig.dev.json
+C:\projects\dotnet\examples\m01\TheWorld\bin\Debug\netcoreapp1.1\TheWorld.dll
+C:\projects\dotnet\examples\m01\TheWorld\bin\Debug\netcoreapp1.1\TheWorld.pdb
+C:\projects\dotnet\examples\m01\TheWorld\obj\Debug\netcoreapp1.1\TheWorld.csprojResolveAssemblyReference.cache
+C:\projects\dotnet\examples\m01\TheWorld\obj\Debug\netcoreapp1.1\TheWorld.AssemblyInfo.cs
+C:\projects\dotnet\examples\m01\TheWorld\obj\Debug\netcoreapp1.1\TheWorld.dll
+C:\projects\dotnet\examples\m01\TheWorld\obj\Debug\netcoreapp1.1\TheWorld.pdb
