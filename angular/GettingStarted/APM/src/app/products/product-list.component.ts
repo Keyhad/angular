@@ -8,11 +8,11 @@ import { ProductService } from "./product.service";
     styleUrls: ['./app/products/product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-
     pageTitle: string = 'Product List';
     imageWidth: number = 50;
     imgaeMargin: number = 2;
     showImage: boolean = false;
+    errorMessage: string;
     
     constructor (private _productService: ProductService) {
         this.listFilter = '';//cart';
@@ -42,8 +42,12 @@ export class ProductListComponent implements OnInit {
     }
     
     ngOnInit(): void {
-        this.products = this._productService.getProducts();
-        this.filteredProducts = this.products;
+        this._productService.getProducts()
+            .subscribe(products => {
+                    this.products = products;
+                    this.filteredProducts = this.products;                   
+                },
+                    error => this.errorMessage = <any>error);
     }
 
     onRatingClicked(message: string) : void {
