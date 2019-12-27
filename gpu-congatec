@@ -1,0 +1,108 @@
+
+Graphics Feature Status
+Canvas: Hardware accelerated
+Flash: Hardware accelerated
+Flash Stage3D: Hardware accelerated
+Flash Stage3D Baseline profile: Hardware accelerated
+Compositing: Hardware accelerated
+Multiple Raster Threads: Enabled
+Out-of-process Rasterization: Disabled
+Hardware Protected Video Decode: Unavailable
+Rasterization: Software only. Hardware acceleration disabled
+Skia Renderer: Disabled
+Video Decode: Unavailable
+Viz Display Compositor: Enabled
+Viz Hit-test Surface Layer: Disabled
+WebGL: Hardware accelerated
+WebGL2: Hardware accelerated
+Driver Bug Workarounds
+clear_uniforms_before_first_program_use
+count_all_in_varyings_packing
+exit_on_context_lost
+scalarize_vec_and_mat_constructor_args
+disabled_extension_GL_KHR_blend_equation_advanced
+disabled_extension_GL_KHR_blend_equation_advanced_coherent
+Problems Detected
+Accelerated video decode is unavailable on Linux: 137247
+Disabled Features: accelerated_video_decode
+Protected video decoding with swap chain is for Windows and Intel only
+Disabled Features: protected_video_decode
+Clear uniforms before first program use on all platforms: 124764, 349137
+Applied Workarounds: clear_uniforms_before_first_program_use
+Mesa drivers in Linux handle varyings without static use incorrectly: 333885
+Applied Workarounds: count_all_in_varyings_packing
+Always rewrite vec/mat constructors to be consistent: 398694
+Applied Workarounds: scalarize_vec_and_mat_constructor_args
+Disable KHR_blend_equation_advanced until cc shaders are updated: 661715
+Applied Workarounds: disable(GL_KHR_blend_equation_advanced), disable(GL_KHR_blend_equation_advanced_coherent)
+Some drivers can't recover after OUT_OF_MEM and context lost: 893177
+Applied Workarounds: exit_on_context_lost
+Version Information
+Data exported	2019-12-27T11:10:18.805Z
+Chrome version	Chrome/78.0.3904.108
+Operating system	Linux 5.0.7+gc7a0e482a175
+Software rendering list URL	https://chromium.googlesource.com/chromium/src/+/4b26898a39ee037623a72fcfb77279fce0e7d648/gpu/config/software_rendering_list.json
+Driver bug list URL	https://chromium.googlesource.com/chromium/src/+/4b26898a39ee037623a72fcfb77279fce0e7d648/gpu/config/gpu_driver_bug_list.json
+ANGLE commit id	unknown hash
+2D graphics backend	Skia/78 dba5c993df3fb95fed01f8131aa0401e83c9198f
+Command Line	/usr/bin/chromium --use-gl=egl --ozone-platform=wayland --app --kiosk --disable-infobars --in-process-gpu --disable-gpu-vsync --force-gpu-rasterization --overscroll-history-navigation=0 --disable-pinch --remote-debugging-port=9222 --window-size=1024,768 --window-position=0,0 --flag-switches-begin --flag-switches-end --gpu-preferences=KAAAAAAAAAAoAAAAAAAAAAAAYAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAABAAAACAAAAAAAAAAQAAAAAAAAAAAAAAADAAAA --use-gl=egl http://[::1]:8080/splash.html
+Driver Information
+Initialization time	4
+In-process GPU	true
+Passthrough Command Decoder	false
+Sandboxed	false
+GPU0	VENDOR = 0x0000 [etnaviv], DEVICE= 0x0000 [Vivante GC2000 rev 5108] *ACTIVE*
+Optimus	false
+AMD switchable	false
+Driver vendor	Mesa
+Driver version	19.0.1
+GPU CUDA compute capability major version	0
+Pixel shader version	1.0
+Vertex shader version	1.0
+Max. MSAA samples	0
+Machine model name	
+Machine model version	
+GL_VENDOR	etnaviv
+GL_RENDERER	Vivante GC2000 rev 5108
+GL_VERSION	OpenGL ES 2.0 Mesa 19.0.1
+GL_EXTENSIONS	GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_texture_filter_anisotropic GL_EXT_texture_compression_s3tc GL_EXT_texture_compression_dxt1 GL_EXT_texture_format_BGRA8888 GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth24 GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_mapbuffer GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_stencil8 GL_OES_texture_3D GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_EGL_image GL_OES_depth_texture GL_AMD_performance_monitor GL_OES_packed_depth_stencil GL_OES_get_program_binary GL_APPLE_texture_max_level GL_EXT_discard_framebuffer GL_EXT_read_format_bgra GL_EXT_frag_depth GL_NV_fbo_color_attachments GL_OES_EGL_image_external GL_OES_EGL_sync GL_OES_vertex_array_object GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_EXT_occlusion_query_boolean GL_EXT_unpack_subimage GL_NV_draw_buffers GL_NV_read_buffer GL_NV_read_depth GL_NV_read_depth_stencil GL_NV_read_stencil GL_EXT_draw_buffers GL_EXT_map_buffer_range GL_KHR_debug GL_OES_required_internalformat GL_OES_surfaceless_context GL_EXT_separate_shader_objects GL_EXT_compressed_ETC1_RGB8_sub_texture GL_EXT_draw_elements_base_vertex GL_EXT_texture_border_clamp GL_KHR_context_flush_control GL_OES_draw_elements_base_vertex GL_OES_texture_border_clamp GL_KHR_no_error GL_EXT_disjoint_timer_query
+Disabled Extensions	GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent
+Disabled WebGL Extensions	
+Window system binding vendor	Mesa Project
+Window system binding version	1.4
+Window system binding extensions	EGL_ANDROID_native_fence_sync EGL_EXT_buffer_age EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_EXT_swap_buffers_with_damage EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image_base EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_KHR_swap_buffers_with_damage EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_WL_bind_wayland_display EGL_WL_create_wayland_buffer_from_image
+Direct rendering version	unknown
+Reset notification strategy	0x0000
+GPU process crash count	0
+gfx::BufferFormats supported for allocation and texturing	R_8: not supported, R_16: not supported, RG_88: not supported, BGR_565: not supported, RGBA_4444: not supported, RGBX_8888: not supported, RGBA_8888: not supported, BGRX_8888: not supported, BGRX_1010102: not supported, RGBX_1010102: not supported, BGRA_8888: not supported, RGBA_F16: not supported, YVU_420: not supported, YUV_420_BIPLANAR: not supported, P010: not supported
+Compositor Information
+Tile Update Mode	One-copy
+Partial Raster	Enabled
+GpuMemoryBuffers Status
+R_8	CAMERA_AND_CPU_READ_WRITE
+R_16	Software only
+RG_88	Software only
+BGR_565	GPU_READ
+RGBA_4444	Software only
+RGBX_8888	GPU_READ, SCANOUT, SCANOUT_CPU_READ_WRITE
+RGBA_8888	GPU_READ, SCANOUT, SCANOUT_CPU_READ_WRITE
+BGRX_8888	GPU_READ, SCANOUT, SCANOUT_CPU_READ_WRITE
+BGRX_1010102	Software only
+RGBX_1010102	Software only
+BGRA_8888	GPU_READ, SCANOUT, SCANOUT_CPU_READ_WRITE
+RGBA_F16	Software only
+YVU_420	Software only
+YUV_420_BIPLANAR	Software only
+P010	Software only
+Display(s) Information
+Info	Display[13] bounds=[0,0 1024x768], workarea=[0,0 1024x768], scale=1, external.
+Color space information	{primaries:BT709, transfer:IEC61966_2_1, matrix:RGB, range:FULL}
+SDR white level in nits	80
+Bits per color component	8
+Bits per pixel	24
+Info	Display[14] bounds=[1024,0 1024x768], workarea=[1024,0 1024x768], scale=1, external.
+Color space information	{primaries:BT709, transfer:IEC61966_2_1, matrix:RGB, range:FULL}
+SDR white level in nits	80
+Bits per color component	8
+Bits per pixel	24
+Video Acceleration Information
